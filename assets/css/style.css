@@ -172,7 +172,7 @@ article header
 }
 
 .article__top {
-    margin: 30px 168px 0 14px;
+    margin: 30px 168px -6px 14px;
     color: var(--gray, #4C4C4C);
     font-family: "Zen Kaku Gothic New";
     font-size: 1.6rem;
@@ -227,13 +227,13 @@ article header
     }
 
     .article__img {
-        margin-top: 46px;
+        margin-top: 67px;
         width: 281px;
         height: 85px;
     }
 
     .article__top {
-        margin: 29px 108px 0 15px;
+        margin: 26px 108px -10px 15px;
         font-size: 2rem;
     }
 
@@ -282,7 +282,7 @@ article header
 
     .article__top {
         font-size: 2.8rem;
-        margin: 45px 475px 0 27px;
+        margin: 20px 475px -10px 27px;
     }
 
     .article__pc {
@@ -361,6 +361,10 @@ about
     position: relative;
 }
 
+.pc__br {
+    display: none;
+}
+
 /* .about tab */
 @media screen and (min-width: 767px) {
     .section--about {
@@ -388,6 +392,10 @@ about
     .about__item {
         font-size: 1.6rem;
         margin: 20px 0 0 41px;
+    }
+
+    .pc__br {
+        display: block;
     }
 }
 
@@ -594,21 +602,14 @@ service
     margin: 0 auto;
 }
 
-.service__subtitle {
-    color: #FF8328;
-    text-align: center;
-    font-family: "Noto Sans";
-    font-size: 1.5rem;
-}
-
 .service__sanzentabi {
     width: 299px;
-    height: 296px;
+    height: 350px;
     padding: 50px 18px;
     align-items: center;
     border: 3px solid #FF8328;
     background-color: #FFF;
-    margin: 50px auto 0;
+    margin: 36px auto 0;
 }
 
 .service__topic {
@@ -665,7 +666,7 @@ service
 
 .service__consulting {
     width: 299px;
-    height: 520px;
+    height: 450px;
     padding: 50px 36px;
     border: 3px solid #FF8328;
     background-color: var(--white);
@@ -673,10 +674,6 @@ service
 }
 
 .service__txt__pc {
-    display: none;
-}
-
-.tab__br {
     display: none;
 }
 
@@ -688,8 +685,7 @@ service
     margin: 28px auto 0;
 }
 
-.service__txt__middle,
-.service__txt__bottom {
+.service__txt__middle {
     color: var(--gray);
     text-align: center;
     font-size: 1.6rem;
@@ -751,19 +747,11 @@ service
         font-size: 4rem;
     }
 
-    .service__subtitle {
-        font-size: 2rem;
-    }
-
     .service__sanzentabi {
         width: 581px;
-        height: 250px;
+        height: 276px;
         padding: 50px 39px 61px 39px;
-        margin: 90px auto 0;
-    }
-
-    .tab__br {
-        display: block;
+        margin: 52px auto 0;
     }
 
     .service__btn__sanzen {
@@ -783,7 +771,7 @@ service
 
     .service__consulting {
         width: 581px;
-        height: 380px;
+        height: 324px;
         padding: 50px 39px;
         margin: 90px auto 0;
     }
@@ -814,10 +802,6 @@ service
         font-size: 4rem;
     }
 
-    .service__subtitle {
-        font-size: 2rem;
-    }
-
     .service__sanzentabi {
         width: 299px;
         height: 296px;
@@ -830,13 +814,9 @@ service
 
     .service__sanzentabi {
         width: 732px;
-        height: 242px;
+        height: 294px;
         padding: 56px 58px;
-        margin: 50px 465px 0 0;
-    }
-
-    .tab__br {
-        display: none;
+        margin: 52px 465px 0 0;
     }
 
     .service__topic {
@@ -886,14 +866,13 @@ service
     }
 
     .service__txt__top,
-    .service__txt__middle,
-    .service__txt__bottom {
+    .service__txt__middle {
         display: none;
     }
 
     .service__txt__pc {
         display: block;
-        color: var(--black);
+        color: var(--gray);
         font-size: 1.6rem;
         line-height: 25px;
         text-align: left;
@@ -954,7 +933,7 @@ menbers
     color: var(--orange, #FF8328);
     text-align: center;
     font-size: 1.8rem;
-    margin: 12px auto 55px;
+    margin: 12px auto 36px;
 }
 
 .osuga__img,
@@ -1108,7 +1087,7 @@ menbers
 
     .menbers__subtitle {
         font-size: 2rem;
-        margin: 12px auto 101px;
+        margin: 12px auto 52px;
     }
 
     .menbers__contents__top,
@@ -1137,7 +1116,7 @@ menbers
     }
 
     .menbers__contents__top {
-        margin-top: 54px;
+        margin-top: 52px;
         display: flex;
         justify-content: center;
         padding: 0;
