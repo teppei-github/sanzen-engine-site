@@ -1,0 +1,6 @@
+node_modules
+.svn
+.env
+**/.DS_Store
+public/lp_images
+.wappler/migrations
