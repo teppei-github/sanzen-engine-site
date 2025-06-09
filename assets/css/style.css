@@ -90,7 +90,7 @@ header
 }
 
 .nav__item a:hover {
-  color: red;
+  color: #B2B2B2;
 }
 
 /* .nav.active表示 */
@@ -350,7 +350,7 @@ about
     font-size: 2.7rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 60px; /* 222.222% */
+    line-height: 60px; 
     margin-top: 82px;
     text-align: left;
 }
@@ -361,7 +361,7 @@ about
     font-size: 2.7rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 60px; /* 222.222% */
+    line-height: 60px; 
     margin-top: 20px;
     text-align: left;
 }
@@ -954,6 +954,11 @@ menbers
     padding: 83px 70px 66px;
 }
 
+.menbers__contents {
+    max-width: 254px;
+    margin: auto;
+}
+
 .menbers__title {
     color: var(--deeporange, #FF6200);
     text-align: center;
@@ -1114,9 +1119,14 @@ menbers
 /* .menbers tab */
 @media screen and (min-width: 767px) {
     .section--menbers {
-        padding: 121px 167px 156px 181px;
+        padding: 0;
         max-width: 100%;
         min-width: 768px;
+    }
+
+    .menbers__contents {
+        max-width: 405px;
+        margin: auto;
     }
 
     .menbers__title {
@@ -1138,9 +1148,14 @@ menbers
 @media screen and (min-width: 1023px) {
     .section--menbers {
         max-width: 100%;
-        min-width: 1024px;
+        min-width: 1452px;
         padding-top: 109px;
-        padding-left: 189px;
+        padding-bottom: 189px;
+    }
+
+    .menbers__contents {
+        max-width: 405px;
+        margin: auto;
     }
 
     .menbers__title {
@@ -1380,7 +1395,7 @@ inc
     .section--inc {
         padding: 39px 227px 131px;
         max-width: 100%;
-        min-width: 1024px;
+        min-width: 1452px;
     }
 
     .inc__title {
@@ -1554,7 +1569,7 @@ contact
 @media screen and (min-width: 1023px) {
     .section--contact {
         max-width: 100%;
-        min-width: 1024px;
+        min-width: 1452px;
         height: 444px;
         padding: 113px 123px;
     }
@@ -1584,7 +1599,7 @@ contact
     }
 
     .contact__btn {
-        width: 218px;
+        min-width: 218px;
         height: 218px;
         padding: 68px 34px 54px 34px;
         margin: 0 auto;
@@ -1612,6 +1627,8 @@ footer
 
 .footer {
     padding: 83px 44px 33px;
+    max-width: 100%;
+    min-width: 390px;
 }
 
 .footer__title {
@@ -1675,6 +1692,8 @@ footer
 @media screen and (min-width: 767px) {
     .footer {
         padding: 107px 53px 54px;
+        max-width: 100%;
+        min-width: 768px;
     }
 
     .line {
@@ -1698,7 +1717,7 @@ footer
 }
 
 /* .footer pc */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1023px) {
     .footer__nav__sp {
         display: none;
     }
@@ -1711,7 +1730,11 @@ footer
     }
 
     .footer {
-        padding: 85px 160px;
+        max-width: 100%;
+        min-width: 1024px;
+        padding-top: 85px;
+        padding-bottom: 85px;
+        margin: 0 160px;
     }
 
     .footer__title {
@@ -1755,6 +1778,7 @@ footer
 
     .footer__nav__pc {
         justify-content: left;
+        white-space: nowrap;
     }
 
     .footer__item {
