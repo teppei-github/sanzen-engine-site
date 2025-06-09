@@ -73,6 +73,7 @@ header
 
 .nav__item {
     color: #FFF;
+    text-shadow: 1px 2px 4px #B2B2B2;
     text-align: center;
     font-family: "Open Sans";
     font-size: 3.2rem;
@@ -98,10 +99,10 @@ header
 }
 
 .header__btn {
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     margin-top: 50px;
-    margin-left: 79.6%;
+    padding-left: 82%;
     position: fixed;
     z-index: 100;
 }
@@ -121,9 +122,10 @@ header
 
     .nav__list {
         display: flex;
-        justify-content: left;
+        justify-content: right;
         gap: 0 14px;
-        padding: 50px 24px 0 427px;
+        padding-top: 50px;
+        padding-right: 24px;
     }
 
     .nav__item {
@@ -141,7 +143,8 @@ header
     .nav__list {
         justify-content: right;
         gap: 0 28px;
-        padding: 90px 61px 0 875px;
+        padding-top: 90px;
+        padding-right: 61px;
     }
 
     .nav__item a {
@@ -154,20 +157,26 @@ header
 /* ============================= 
 article header
 ==============================*/
+.article {
+    max-width: 100%;
+    min-width: 390px;
+}
+
 .article__header {
     background-image: url(../images/background_sp.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    max-width: 100%;
     height: 627px;
 }
 
 .article__contents {
-    padding: 191px 98px 358px 34px;
+    padding-top: 191px;
+    padding-left: 34px;
 }
 
 .article__img {
-    width: 258px;
+    min-width: 258px;
     height: 76px;
 }
 
@@ -216,9 +225,14 @@ article header
 
 /* .article header tab */
 @media screen and (min-width: 767px) {
+    .article {
+        max-width: 100%;
+        min-width: 768px;
+    }      
+
     .article__header {
         background-image: url(../images/background_pc.png);
-        width: 100%;
+        max-width: 100%;
         height: 376px;
     }
 
@@ -228,7 +242,7 @@ article header
 
     .article__img {
         margin-top: 67px;
-        width: 281px;
+        min-width: 281px;
         height: 85px;
     }
 
@@ -265,18 +279,24 @@ article header
 
 /* .article header pc */
 @media screen and (min-width: 1023px) {
+    .article {
+        max-width: 100%;
+        min-width: 1024px;
+    }
+
     .article__header {
         background-image: url(../images/background_pc.png);
-        width: 100%;
+        max-width: 100%;
         height: 704px;
     }
 
     .article__contents {
-        padding: 220px 685px 170px 174px;
+        padding-top: 220px;
+        padding-left: 174px;
     }
 
     .article__img {
-        width: 554px;
+        min-width: 554px;
         height: 168px;
     }
 
@@ -301,6 +321,8 @@ about
 ==============================*/
 .section--about {
     padding: 87px 50px 119px;
+    max-width: 100%;
+    min-width: 390px;
 }
 
 .about__title {
@@ -369,6 +391,8 @@ about
 @media screen and (min-width: 767px) {
     .section--about {
         padding: 121px 86px 135px 110px;
+        max-width: 100%;
+        min-width: 768px;
     }
 
     .about__title {
@@ -403,6 +427,8 @@ about
 @media screen and (min-width: 1024px) {
     .section--about {
         padding: 139px 83px 55px 162px;
+        max-width: 100%;
+        min-width: 1024px;
     }
 
     .about__title {
@@ -465,8 +491,9 @@ lead
 .lead__item {
     background-image: url(../images/japan_sp.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    background-size: contain;
+    max-width: 100%;
+    min-width: 390px;
     height: 695px;
     padding: 80px 42px;
 }
@@ -525,8 +552,9 @@ lead
     .lead__item {
         background-image: url(../images/japan_pc.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+        background-size: contain;
+        max-width: 100%;
+        min-width: 768px;
         height: 430px;
         padding: 47px 43px 27px 77px; 
     }
@@ -573,8 +601,11 @@ lead
     }
 
     .lead__item {
+        max-width: 100%;
+        min-width: 1024px;
         height: 810px;
         padding: 200px 159px 175px 239px;
+        background-size: contain;
     }
 }
 
@@ -585,7 +616,8 @@ service
     background-image: url(../images/service_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
+    min-width: 390px;
     height: 1414px;
     padding: 52px 32px 0;
     background-color: var(--backgray);
@@ -737,7 +769,8 @@ service
 @media screen and (min-width: 767px) {
     .section--service {
         background-image: url(../images/service_background_tab.png);
-        width: 100%;
+        max-width: 100%;
+        min-width: 768px;
         height: 1517px;
         padding: 53px 93px 0;
         background-color: var(--backgray);
@@ -793,7 +826,8 @@ service
 @media screen and (min-width: 1023px) {
     .section--service {
         background-image: url(../images/service_background_pc.png);
-        width: 100%;
+        max-width: 100%;
+        min-width: 1440px;
         height: 1606px;
         padding: 113px 94px 0 149px;
     }
@@ -915,6 +949,8 @@ menbers
 ==============================*/
 .section--menbers {
     background-color: var(--backgray);
+    max-width: 100%;
+    min-width: 390px;
     padding: 83px 70px 66px;
 }
 
@@ -1079,6 +1115,8 @@ menbers
 @media screen and (min-width: 767px) {
     .section--menbers {
         padding: 121px 167px 156px 181px;
+        max-width: 100%;
+        min-width: 768px;
     }
 
     .menbers__title {
@@ -1099,7 +1137,10 @@ menbers
 /* .menbers pc */
 @media screen and (min-width: 1023px) {
     .section--menbers {
-        padding: 109px 189px 149px;
+        max-width: 100%;
+        min-width: 1024px;
+        padding-top: 109px;
+        padding-left: 189px;
     }
 
     .menbers__title {
@@ -1123,7 +1164,7 @@ menbers
     }
 
     .osuga__img {
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 39px;
         align-items: center;
@@ -1135,7 +1176,7 @@ menbers
     }
 
     .osuga__plofile {
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 105px 48px;
         align-items: center;
@@ -1167,7 +1208,7 @@ menbers
     }
 
     .osuga__message {
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 110px 32px;
         font-size: 2.2rem;
@@ -1181,7 +1222,7 @@ menbers
 
     .menbers__planting {
         background-color: var(--white);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 22px 21px;
     }
@@ -1193,7 +1234,7 @@ menbers
 
     .menbers__sakura {
         background-color: var(--orange);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 13px;
     }
@@ -1205,7 +1246,7 @@ menbers
 
     .menbers__pray {
         background-color: var(--white);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 23px;
     }
@@ -1223,7 +1264,7 @@ menbers
 
     .yoshida__img {
         background-color: var(--lightblue);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 39px;
         align-items: center;
@@ -1231,7 +1272,7 @@ menbers
 
     .yoshida__plofile {
         background-color: var(--white);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 105px 55px;
         align-items: center;
@@ -1239,7 +1280,7 @@ menbers
 
     .yoshida__message {
         background-color: var(--orange);
-        width: 354px;
+        min-width: 354px;
         height: 354px;
         padding: 132px 20px;
         font-size: 2.2rem;
@@ -1256,6 +1297,8 @@ inc
 .section--inc {
     padding: 32px 51px 88px;
     background-color: var(--backgray);
+    max-width: 100%;
+    min-width: 390px;
 }
 
 .inc__title {
@@ -1319,6 +1362,8 @@ inc
 @media screen and (min-width: 767px) {
     .section--inc {
         padding: 0 116px 177px;
+        max-width: 100%;
+        min-width: 768px;
     }
 
     .inc__title {
@@ -1334,6 +1379,8 @@ inc
 @media screen and (min-width: 1023px) {
     .section--inc {
         padding: 39px 227px 131px;
+        max-width: 100%;
+        min-width: 1024px;
     }
 
     .inc__title {
@@ -1386,7 +1433,8 @@ inc
 contact
 ==============================*/
 .section--contact {
-    width: 100%;
+    max-width: 100%;
+    min-width: 390px;
     height: 483px;
     padding: 56px 39px;
     background-color: var(--orange);
@@ -1400,15 +1448,17 @@ contact
     color: var(--white, #FFF);
     font-size: 2.4rem;
     font-weight: 700;
-    margin-right: 94px;
+    padding-right: 94px;
+    white-space: nowrap;
 }
 
 .contact__title__sp__bottom {
     color: var(--white, #FFF);
     font-size: 2.4rem;
     font-weight: 700;
-    margin-left: 95px;
-    margin-top: 7px;
+    padding-left: 95px;
+    padding-top: 7px;
+    white-space: nowrap;
 }
 
 .contact__subtitle {
@@ -1457,7 +1507,8 @@ contact
 /* .contact tab */
 @media screen and (min-width: 767px) {
     .section--contact {
-        width: 100%;
+        max-width: 100%;
+        min-width: 768px;
         height: 364px;
         padding: 53px 67px 38px 67px;
     }
@@ -1502,7 +1553,8 @@ contact
 /* .contact pc */
 @media screen and (min-width: 1023px) {
     .section--contact {
-        width: 100%;
+        max-width: 100%;
+        min-width: 1024px;
         height: 444px;
         padding: 113px 123px;
     }
