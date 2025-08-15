@@ -675,6 +675,7 @@ service
   font-weight: 700;
   line-height: 25px;
   position: relative;
+  display: block;
 }
 
 .service__btnTxt__sanzen::after {
@@ -734,6 +735,7 @@ service
   font-weight: 700;
   line-height: 25px;
   position: relative;
+  display: block;
 }
 
 .service__btnTxt__syousai::after {
@@ -1483,6 +1485,7 @@ contact
 }
 
 .contact__btn {
+  display: block;
   border-radius: 50%;
   background-color: var(--white);
   width: 156px;
