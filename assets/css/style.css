@@ -43,6 +43,7 @@ Img {
 /* ============================= 
 header
 ==============================*/
+
 .nav {
   background-color: rgba(255, 131, 40, 0.88);
   background-size: contain;
@@ -164,6 +165,22 @@ article header
   background-repeat: no-repeat;
   max-width: 100%;
   height: 627px;
+}
+
+.article__title {
+  color: var(--black, #131313);
+  font-family: "Zen Kaku Gothic New";
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+/* .article header pc */
+@media screen and (max-width: 1023px) {
+  .article__title {
+    font-size: 1.8rem;
+  }
 }
 
 .article__contents {
