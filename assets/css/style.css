@@ -743,16 +743,19 @@ service
   height: 57px;
   padding: 16px 46px 13px;
   margin: -28px auto 0;
+  padding-inline: 0px;
+  text-align: center;
 }
 
 .service__btnTxt__syousai {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
   position: relative;
   display: block;
+  padding-right: 10px;
 }
 
 .service__btnTxt__syousai::after {
@@ -763,7 +766,7 @@ service
   height: 31px;
   width: 31px;
   top: 53%;
-  left: 89%;
+  left: 85%;
   transform: translate(-50%, -50%);
   margin-left: 4px;
 }
@@ -932,17 +935,21 @@ service
     height: 72px;
     padding: 24px 51px 14px 69px;
     margin: -36px 0 0 929px;
+
+    padding-inline: 0px;
+    text-align: center;
   }
 
   .service__btnTxt__syousai {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    padding-right: 10px;
   }
 
   .service__btnTxt__syousai::after {
     height: 44px;
     width: 44px;
     top: 53%;
-    left: 89%;
+    left: 85%;
     margin-left: 8px;
   }
 
