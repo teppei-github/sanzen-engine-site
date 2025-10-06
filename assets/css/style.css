@@ -710,7 +710,7 @@ service
 
 .service__consulting {
   width: 299px;
-  height: 450px;
+  height: 520px;
   padding: 50px 34px;
   border: 3px solid #ff8328;
   background-color: var(--white);
@@ -819,7 +819,7 @@ service
 
   .service__consulting {
     width: 581px;
-    height: 324px;
+    height: 360px;
     padding: 50px 39px;
     margin: 90px auto 0;
   }
@@ -903,7 +903,7 @@ service
   }
 
   .service__consulting {
-    width: 689px;
+    width: 720px;
     height: 294px;
     padding: 49px 38px 49px 50px;
     margin: 67px 121px 0 387px;
