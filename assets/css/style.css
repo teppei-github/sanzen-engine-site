@@ -19,6 +19,8 @@ common
 
 html {
   font-size: 62.5%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,11 +30,17 @@ body {
   color: var(--black, #131313);
   background: var(--white, #ffffff);
   line-height: 1.5;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 Img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  padding-top: 3rem;
 }
 
 /* Animate.css */
@@ -629,7 +637,7 @@ service
   background-size: cover;
   max-width: 100%;
   min-width: 390px;
-  height: 1414px;
+  height: 1114px;
   padding: 52px 32px 0;
   background-color: var(--backgray);
 }
@@ -710,11 +718,10 @@ service
 
 .service__consulting {
   width: 299px;
-  height: 520px;
-  padding: 50px 34px;
+  margin: 52px auto 0;
   border: 3px solid #ff8328;
   background-color: var(--white);
-  margin: 52px auto 0;
+  padding: 50px 34px;
 }
 
 .service__txt__pc {
@@ -738,13 +745,17 @@ service
 }
 
 .service__btn__syousai {
+  margin-top: 32px;
+  max-width: 30rem;
+  padding: 1.8rem 0;
+  display: block;
   background-color: var(--orange);
-  width: 221px;
-  height: 57px;
-  padding: 16px 46px 13px;
-  margin: -28px auto 0;
-  padding-inline: 0px;
   text-align: center;
+  margin-inline: auto;
+}
+
+.service__btn__syousai:hover {
+  background-color: var(--deeporange);
 }
 
 .service__btnTxt__syousai {
@@ -755,7 +766,7 @@ service
   line-height: 25px;
   position: relative;
   display: block;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 .service__btnTxt__syousai::after {
@@ -770,10 +781,6 @@ service
   transform: translate(-50%, -50%);
 }
 
-.service__btn__syousai:hover {
-  background-color: var(--deeporange);
-}
-
 .service__img {
   margin: 73px auto 0;
   width: 338px;
@@ -786,7 +793,7 @@ service
     background-image: url(../images/service_background_tab.png);
     max-width: 100%;
     min-width: 768px;
-    height: 1517px;
+    height: 1117px;
     padding: 53px 93px 0;
     background-color: var(--backgray);
   }
@@ -813,15 +820,8 @@ service
     background-color: var(--deeporange);
   }
 
-  .service__btn__syousai:hover {
-    background-color: var(--deeporange);
-  }
-
   .service__consulting {
     width: 581px;
-    height: 360px;
-    padding: 50px 39px;
-    margin: 90px auto 0;
   }
 
   .service__txt__middle,
@@ -843,7 +843,7 @@ service
     background-image: url(../images/service_background_pc.png);
     max-width: 100%;
     min-width: 1440px;
-    height: 1606px;
+    height: 1206px;
     padding: 113px 94px 0 149px;
   }
 
@@ -904,9 +904,6 @@ service
 
   .service__consulting {
     width: 720px;
-    height: 294px;
-    padding: 49px 38px 49px 50px;
-    margin: 67px 121px 0 387px;
   }
 
   .service__txt__top {
@@ -928,17 +925,6 @@ service
     margin-top: 30px;
   }
 
-  .service__btn__syousai {
-    background-color: var(--orange);
-    width: 268px;
-    height: 72px;
-    padding: 24px 51px 14px 69px;
-    margin: -36px 0 0 929px;
-
-    padding-inline: 0px;
-    text-align: center;
-  }
-
   .service__btnTxt__syousai {
     font-size: 2rem;
     padding-right: 3rem;
@@ -949,10 +935,6 @@ service
     width: 44px;
     top: 53%;
     left: 85%;
-  }
-
-  .service__btn__syousai:hover {
-    background-color: var(--deeporange);
   }
 
   .service__img {
@@ -1706,6 +1688,7 @@ footer
   color: var(--gray, #4c4c4c);
   text-align: center;
   font-size: 1.2rem;
+  margin-top: 0;
 }
 
 /* .footer tab */
@@ -1809,5 +1792,6 @@ footer
   .copy {
     margin: 50px auto 0;
     font-size: 1.4rem;
+    margin-top: 0;
   }
 }
